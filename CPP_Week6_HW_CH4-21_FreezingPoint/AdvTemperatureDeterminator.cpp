@@ -15,23 +15,23 @@ void AdvTemperatureDeterminator::determine_Freeze_and_Boiling()
 
 	if (userTemp <= -362) {
 		//water freeze under 33
-		cout << "Oxygen Will Freeze At: " << userTemp << " , ";
+		cout << "Oxygen Will Freeze At: " << userTemp << ", ";
 	}
 	else if (userTemp <= -173) {
-		cout << "Ethyl Will Freeze At: " << userTemp << " , ";
+		cout << "Ethyl Will Freeze At: " << userTemp << ", ";
 		//merc freezes under -38
 	}
 	else if (userTemp <= -38) {
-		cout << "Mercury Will Freeze At: " << userTemp << " , ";
+		cout << "Mercury Will Freeze At: " << userTemp << ", ";
 
 
 	}
 	else if (userTemp <= 32) {
-		cout << "Water Will Freeze At: " << userTemp << " , ";
+		cout << "Water Will Freeze At: " << userTemp << ", ";
 
 	}
 	else {
-		cout << "Nothing Freezes at that Temperature , But ";
+		cout << "Nothing Freezes at that Temperature, But ";
 	}
 
 
@@ -50,6 +50,9 @@ void AdvTemperatureDeterminator::determine_Freeze_and_Boiling()
 	else if (userTemp >= -306) {
 		cout << "Oxygen Will Boil At: " << userTemp;
 
+	}
+	else {
+		cout << "Nothing will Boil at " << userTemp;
 	}
 
 
